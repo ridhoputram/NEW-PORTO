@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileNet Project - M1ERR</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="subpage">
+
+    <!-- HEADER CONTAINER (Dimuat dari components.html) -->
+    <div id="header-container"></div>
+
+    <!-- KONTEN UTAMA -->
+    <main class="main-content">
+        <section class="project-detail">
+            <!-- TOMBOL BACK -->
+            <a href="../index.html#projects" class="btn-back">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                <span data-id="Kembali" data-en="Back">Kembali</span>
+            </a>
+            
+
+            <h1 class="section-title" 
+                data-id="FINE-TUNING MOBILENETV3-SMALL UNTUK DETEKSI HAMA PARASITOID" 
+                data-en="FINE-TUNING MOBILENETV3-SMALL FOR PARASITOID PEST DETECTION">
+                FINE-TUNING MOBILENETV3-SMALL FOR PARASITOID PEST DETECTION
+            </h1>
+
+            <p class="hero-desc" 
+               data-id="Halaman detail pengerjaan proyek MobileNet." 
+               data-en="Detail page of the MobileNet project implementation.">
+               Halaman detail pengerjaan proyek MobileNet.
+            </p>
+        </section>
+    </main>
+
+    <!-- KONTEN PPT VIEWER -->
+    <div class="ppt-wrapper">
+        <div class="ppt-container" id="pptContainer">
+            <iframe 
+                id="pptIframe"
+                src="https://docs.google.com/presentation/d/e/2PACX-1vRtCGT64ZBNCoD7rqX--y8v4NmmyBoAVHKzSpfklM76uq8tDBnVKiVeIzR1KUIh3On8UU-9edFfh2-z/embed?start=false&loop=false&delayms=3000" 
+                frameborder="0" 
+                allowfullscreen="true">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- TOMBOL DI BAWAH KOTAK -->
+    <div class="ppt-actions">
+        <button type="button" id="btnFullscreen" class="btn btn-secondary" data-id="Buka Fullscreen" data-en="Open Fullscreen">
+            Buka Fullscreen
+        </button>
+        <a href="#" class="hero-cta" download>
+            <svg 
+                width="18" 
+                height="18" 
+                viewBox="0 0 24 24"
+                fill="none" 
+                stroke="currentColor" 
+                stroke-width="2.5" 
+                stroke-linecap="round" 
+                stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+
+            <span data-id="Download PPT" data-en="Download PPT">
+                Download PPT
+            </span>
+        </a>
+    </div>
+
+    <!-- MODAL / POP-UP FULLSCREEN -->
+    <div class="ppt-modal" id="pptModal">
+        <div class="ppt-modal-content">
+            <button class="ppt-modal-close" id="btnCloseModal">&times;</button>
+            <iframe id="modalIframe" src="" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+    </div>
+
+
+    <!-- SECTION GALERI KARYA -->
+    <section class="project-gallery-section">
+        <!-- Judul & Deskripsi Rata Kiri -->
+        <div class="gallery-header">
+            <h2 class="gallery-title" data-id="GAMBAR PROJEK" data-en="PROJECT GALLERY">PROJECT GALLERY</h2>
+            <p class="gallery-subtitle" data-id="Beberapa dokumentasi hasil visualisasi, dataset, dan antarmuka sistem." data-en="Some documentation of visualization, datasets, and system interfaces.">
+                Some documentation of visualization, datasets, and system interfaces.
+            </p>
+        </div>
+
+        <!-- 1 Box Project Gallery MobileNet -->
+        <div class="gallery-card-box">
+            <div class="gallery-photos-grid">
+                <div class="gallery-photo-item">
+                    <img src="../images/deteksihama/deteksihama1.png" alt="Deteksi Tanpa Hama">
+                    <div class="photo-caption" data-id="Deteksi Tanpa Hama" data-en="No Pest Detected">Deteksi Tanpa Hama</div>
+                </div>
+                <div class="gallery-photo-item">
+                    <img src="../images/deteksihama/deteksihama2.png" alt="Deteksi Tanpa Hama">
+                    <div class="photo-caption" data-id="Deteksi Tanpa Hama" data-en="No Pest Detected">Deteksi Tanpa Hama</div>
+                </div>
+                <div class="gallery-photo-item">
+                    <img src="../images/deteksihama/deteksihama3.png" alt="Terdeteksi Ada Hama">
+                    <div class="photo-caption" data-id="Terdeteksi Ada Hama" data-en="Pest Detected">Terdeteksi Ada Hama</div>
+                </div>
+                <div class="gallery-photo-item">
+                    <img src="../images/deteksihama/deteksihama4.png" alt="Terdeteksi Ada Hama">
+                    <div class="photo-caption" data-id="Terdeteksi Ada Hama" data-en="Pest Detected">Terdeteksi Ada Hama</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER CONTAINER (Dimuat dari components.html) -->
+    <div id="footer-container"></div>
+
+    <!-- SCRIPT JS -->
+    <script src="../script.js"></script>
+</body>
+</html>
