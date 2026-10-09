@@ -131,6 +131,11 @@ function loadLayoutComponents() {
             const headerContainer = document.getElementById('header-container');
             const footerContainer = document.getElementById('footer-container');
 
+            const logoImage = headerContent?.querySelector('.logo img');
+            if (logoImage) {
+                logoImage.setAttribute('src', isSubfolder ? '../images/m1.png' : 'images/m1.png');
+            }
+
             if (headerContainer && headerContent) headerContainer.appendChild(headerContent);
             if (footerContainer && footerContent) footerContainer.appendChild(footerContent);
 
