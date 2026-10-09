@@ -130,6 +130,15 @@ function loadLayoutComponents() {
 
             const headerContainer = document.getElementById('header-container');
             const footerContainer = document.getElementById('footer-container');
+            const homePath = isSubfolder ? '../index.html' : 'index.html';
+
+            const logoLink = headerContent?.querySelector('.logo');
+            if (logoLink) logoLink.setAttribute('href', homePath);
+
+            headerContent?.querySelectorAll('.nav-links a').forEach(link => {
+                const sectionId = link.getAttribute('href')?.split('#')[1];
+                if (sectionId) link.setAttribute('href', `${homePath}#${sectionId}`);
+            });
 
             const logoImage = headerContent?.querySelector('.logo img');
             if (logoImage) {
