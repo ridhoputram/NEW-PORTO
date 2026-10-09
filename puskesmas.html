@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puskesmas Project - M1ERR</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="subpage">
+
+    <!-- HEADER CONTAINER -->
+    <div id="header-container"></div>
+
+    <!-- KONTEN UTAMA -->
+    <main class="main-content">
+        <section class="project-detail">
+            <!-- TOMBOL BACK -->
+            <a href="../index.html#projects" class="btn-back">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                <span data-id="Kembali" data-en="Back">Kembali</span>
+            </a>
+
+            <!-- JUDUL & DESKRIPSI UTAMA -->
+            <h1 class="section-title" 
+                data-id="SISTEM INFORMASI PUSKESMAS" 
+                data-en="PUSKESMAS INFORMATION SYSTEM">
+                SISTEM INFORMASI PUSKESMAS
+            </h1>
+
+            <p class="hero-desc" style="max-width: 100%;"
+                data-id="Berikut adalah gambaran site map, dimana kotak hitam adalah halaman yang saya buat pada website UPT Puskesmas Cigadung." 
+                data-en="Here is the sitemap overview, where the black boxes represent the pages I created on the UPT Puskesmas Cigadung website.">
+                Berikut adalah gambaran site map, dimana kotak hitam adalah halaman yang saya buat pada website UPT Puskesmas Cigadung.
+            </p>
+
+            <!-- GAMBAR UTAMA (SITEMAP) -->
+            <div class="single-image-box">
+                <img src="../images/puskesmas/sitemap.png" alt="Sistem Informasi Puskesmas" class="project-single-img">
+            </div>
+
+            <!-- JUDUL & SUBTITLE GAMBAR PROJEK -->
+            <div class="section-header" style="margin-top: 48px;">
+                <h2 class="section-title" 
+                    data-id="GAMBAR PROJEK" 
+                    data-en="PROJECT GALLERY">
+                    GAMBAR PROJEK
+                </h2>
+
+                <p class="hero-desc" style="max-width: 100%;"
+                   data-id="Berikut merupakan hasil screenshoot, bagian yang saya buat pada website UPT Puskesmas Cigadung." 
+                   data-en="Below are screenshots of the sections I developed on the UPT Puskesmas Cigadung website.">
+                   Beberapa dokumentasi hasil visualisasi, dataset, dan antarmuka sistem.
+                </p>
+            </div>
+
+            <!-- SHOWCASE GALLERY -->
+            <div class="gallery-showcase">
+                <!-- TAMPILAN GAMBAR UTAMA BESAR -->
+                <div class="main-display-box">
+                    <button class="nav-btn prev-btn" id="prevBtn" onclick="changeImage(-1)" aria-label="Sebelumnya">&#10094;</button>
+                    
+                    <img id="mainDisplayImg" src="../images/puskesmas/login.png" alt="Featured Image">
+                    <div id="mainDisplayCaption" class="main-caption" data-id="Halaman Login" data-en="Login Page">Halaman Login</div>
+                    
+                    <button class="nav-btn next-btn" id="nextBtn" onclick="changeImage(1)" aria-label="Selanjutnya">&#10095;</button>
+                </div>
+
+                <!-- STRIP THUMBNAILS -->
+                <div class="thumbnail-strip">
+                    <div class="thumb-item active" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/login.png" alt="Halaman Login" data-en="Login Page" data-id="Halaman Login">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/register.png" alt="Daftar Vaksin" data-en="Vaccine List" data-id="Daftar Vaksin">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/pelayanangizi.png" alt="Halaman Pelayanan Gizi" data-en="Nutrition Services Page" data-id="Halaman Pelayanan Gizi">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/dashboard.png" alt="Dashboard Admin" data-en="Admin Dashboard" data-id="Dashboard Admin">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/dashboardberita.png" alt="Dashboard Berita" data-en="News Dashboard" data-id="Dashboard Berita">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/tambahberita.png" alt="Tambah Berita" data-en="Add News" data-id="Tambah Berita">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/dashboardpegawai.png" alt="Dashboard Pegawai" data-en="Employee Dashboard" data-id="Dashboard Pegawai">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/tambahpegawai.png" alt="Tambah Pegawai" data-en="Add Employee" data-id="Tambah Pegawai">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/editpegawai.png" alt="Edit Pegawai" data-en="Edit Employee" data-id="Edit Pegawai">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/dashboarduser.png" alt="Dashboard Pengguna" data-en="User Dashboard" data-id="Dashboard Pengguna">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/tambahuser.png" alt="Tambah Pengguna" data-en="Add User" data-id="Tambah Pengguna">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/edituser.png" alt="Edit Pengguna" data-en="Edit User" data-id="Edit Pengguna">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/dashboardpertanyaan.png" alt="Dashboard Pertanyaan" data-en="Inquiries Dashboard" data-id="Dashboard Pertanyaan">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/tambahpertanyaan.png" alt="Tambah Pertanyaan" data-en="Add Inquiries" data-id="Tambah Pertanyaan">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/editpertanyaan.png" alt="Edit Pertanyaan" data-en="Edit Inquiries" data-id="Edit Pertanyaan">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/dashboardvaksin.png" alt="Dashboard Vaksin" data-en="Vaccine Dashboard" data-id="Dashboard Vaksin">
+                    </div>
+                    <div class="thumb-item" onclick="selectImage(this)">
+                        <img src="../images/puskesmas/editvaksin.png" alt="Edit Vaksin" data-en="Edit Vaccine" data-id="Edit Vaksin">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- FOOTER CONTAINER -->
+    <div id="footer-container"></div>
+
+    <!-- SCRIPT JS -->
+    <script src="../script.js"></script>
+</body>
+</html>

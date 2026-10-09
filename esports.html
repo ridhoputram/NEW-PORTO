@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esports Journey - M1ERR</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="subpage">
+
+    <!-- Header Container -->
+    <div id="header-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="project-detail esports-journey">
+            
+            <!-- Tombol Kembali -->
+            <a href="../index.html#about" class="btn-back" aria-label="Kembali ke halaman utama">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                <span data-id="Kembali" data-en="Back">Kembali</span>
+            </a>
+
+            <h1 class="section-title" data-id="Perjalanan Esports" data-en="ESPORTS Journey">Perjalanan Esports</h1>
+            <p class="hero-desc" data-id="Berikut merupakan perjalanan esports profesional yang saya tekuni sebelumnya." data-en="The following is my professional journey in esports.">
+                Berikut merupakan perjalanan esports profesional yang saya tekuni sebelumnya.
+            </p>
+
+            <div class="timeline-container">
+                <div class="timeline">
+                    
+                    <!-- KARTU 1: Esports World Cup -->
+                    <div class="timeline-card">
+                        <div class="card-content-wrapper">
+                            
+                            <!-- HEADER KARTU (Pemisah Utama Kiri & Kanan) -->
+                            <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                                
+                                <!-- EWC -->
+                                <div class="card-header-left" style="display: flex; align-items: center; gap: 12px;">
+                                    <img src="../images/ewc.png" alt="EWC Logo" class="team-logo">
+                                    <span style="font-size: 1.25rem; font-weight: 700; color: #ffffff; white-space: nowrap;" data-id="Esports World Cup Kuaishou" data-en="Esports World Cup Kuaishou">
+                                        Esports World Cup Kuaishou
+                                    </span>
+                                </div>
+
+                                <!-- SISI KANAN: Bendera + Tahun -->
+                                <div class="header-right" style="display: flex; align-items: center; gap: 8px;">
+                                    <img src="../images/bendera/china.png" alt="Bendera China" class="flag-icon">
+                                    <span class="card-date">2026</span>
+                                </div>
+
+                            </div>
+
+                            <!-- SUBJUDUL PRESTASI -->
+                            <h3 class="card-title">
+                                <span data-id="Peringkat Ke 6" data-en="6th Place">6th Place</span>
+                            </h3>
+
+                            <p class="card-desc" data-id="Meraih medali PERUNGGU pada ajang World Cyber Games di Indonesia pada tahun 2024." data-en="Achieved a Silver medal at the World Cyber Games 2024.">
+                                Achieved a Silver medal at the World Cyber Games 2024.
+                            </p>
+                            
+                            <!-- Carousel Foto Momen -->
+                            <div class="card-carousel">
+                                <div class="carousel-track">
+                                    <img src="../images/esports/ewc1.jpeg" alt="Momen Medali Perunggu 1" class="carousel-img active" onclick="openLightbox(this)">
+                                    <img src="../images/esports/ewc2.jfif" alt="Momen Medali Perunggu 2" class="carousel-img" onclick="openLightbox(this)">
+                                </div>
+                                <button class="carousel-btn prev" onclick="moveSlide(this, -1)" aria-label="Sebelumnya">&#10094;</button>
+                                <button class="carousel-btn next" onclick="moveSlide(this, 1)" aria-label="Selanjutnya">&#10095;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active" onclick="setSlide(this, 0)"></span>
+                                    <span class="dot" onclick="setSlide(this, 1)"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-tags">
+                            <span class="tag role" data-id="Pemain" data-en="Player">Pemain</span>
+                            <span class="tag game">CFL</span>
+                            <span class="tag game">EWC26</span>
+                            <span class="tag game">CHINA</span>
+                        </div>
+                    </div>
+
+                    <!-- KARTU 2: Sea National Cup -->
+                    <div class="timeline-card">
+                        <div class="card-content-wrapper">
+                            
+                            <!-- HEADER KARTU (Pemisah Utama Kiri & Kanan) -->
+                            <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                                
+                                <!-- SISI KIRI: Logo + Teks "Sea National Cup" Samping-sampingan -->
+                                <div class="card-header-left" style="display: flex; align-items: center; gap: 12px;">
+                                    <img src="../images/seagames31.png" alt="SEA Games 31 Logo" class="team-logo">
+                                    <span style="font-size: 1.25rem; font-weight: 700; color: #ffffff; white-space: nowrap;" data-id="Sea National Cup" data-en="Sea National Cup">
+                                        Sea National Cup
+                                    </span>
+                                </div>
+
+                                <!-- SISI KANAN: Bendera + Tahun -->
+                                <div class="header-right" style="display: flex; align-items: center; gap: 8px;">
+                                    <img src="../images/bendera/vietnam.png" alt="Bendera Vietnam" class="flag-icon">
+                                    <span class="card-date">2026</span>
+                                </div>
+
+                            </div>
+
+                            <!-- SUBJUDUL PRESTASI -->
+                            <h3 class="card-title">
+                                <span data-id="Medali Emas" data-en="Gold Medal">Gold Medal</span>
+                                <img src="../images/gold-medal.png" alt="Ikon Medali Emas" class="medal-icon">
+                            </h3>
+
+                            <p class="card-desc" data-id="Meraih medali Emas pada ajang SEA NATIONAL CUP di Vietnam pada tahun 2026." data-en="Achieved a GOLD medal at the SEA NATIONAL CUP 2026.">
+                                Achieved a GOLD medal at the SEA NATIONAL CUP 2026.
+                            </p>
+                            
+                            <!-- Carousel Foto Momen -->
+                            <div class="card-carousel">
+                                <div class="carousel-track">
+                                    <img src="../images/esports/snc2.jpeg" class="carousel-img" onclick="openLightbox(this)">
+                                    <img src="../images/esports/snc3.jpeg" class="carousel-img active" onclick="openLightbox(this)">
+                                    <img src="../images/esports/snc1.jpeg" class="carousel-img" onclick="openLightbox(this)">
+                                </div>
+                                <button class="carousel-btn prev" onclick="moveSlide(this, -1)" aria-label="Sebelumnya">&#10094;</button>
+                                <button class="carousel-btn next" onclick="moveSlide(this, 1)" aria-label="Selanjutnya">&#10095;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active" onclick="setSlide(this, 0)"></span>
+                                    <span class="dot" onclick="setSlide(this, 1)"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-tags">
+                            <span class="tag role" data-id="Pemain" data-en="Player">Pemain</span>
+                            <span class="tag game">CFL</span>
+                            <span class="tag game">SNC</span>
+                        </div>
+                    </div>
+
+                    <!-- KARTU 3: WCG -->
+                    <div class="timeline-card">
+                        <div class="card-content-wrapper">
+                            
+                            <!-- HEADER KARTU (Pemisah Utama Kiri & Kanan) -->
+                            <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                                
+                                <!-- SISI KIRI: Logo + Teks "SEA Games 31" Samping-sampingan -->
+                                <div class="card-header-left" style="display: flex; align-items: center; gap: 12px;">
+                                    <img src="../images/WCG_2024.png" alt="WCG Logo" class="team-logo">
+                                    <span style="font-size: 1.25rem; font-weight: 700; color: #ffffff; white-space: nowrap;" data-id="World Cyber Games" data-en="World Cyber Games">
+                                        World Cyber Games
+                                    </span>
+                                </div>
+
+                                <!-- SISI KANAN: Bendera + Tahun -->
+                                <div class="header-right" style="display: flex; align-items: center; gap: 8px;">
+                                    <img src="../images/bendera/indonesia.png" alt="Bendera Vietnam" class="flag-icon">
+                                    <span class="card-date">2024</span>
+                                </div>
+
+                            </div>
+
+                            <!-- SUBJUDUL PRESTASI -->
+                            <h3 class="card-title">
+                                <span data-id="Medali Silver" data-en="Silver Medal">Medali Perunggu</span>
+                                <img src="../images/silver-medal.png" alt="Ikon Medali Perunggu" class="medal-icon">
+                            </h3>
+
+                            <p class="card-desc" data-id="Meraih medali PERUNGGU pada ajang World Cyber Games di Indonesia pada tahun 2024." data-en="Achieved a Silver medal at the World Cyber Games 2024.">
+                                Achieved a Silver medal at the World Cyber Games 2024.
+                            </p>
+                            
+                            <!-- Carousel Foto Momen -->
+                            <div class="card-carousel">
+                                <div class="carousel-track">
+                                    <img src="../images/esports/wcg1.jpeg" alt="Momen Medali Perunggu 1" class="carousel-img active" onclick="openLightbox(this)">
+                                </div>
+                                <button class="carousel-btn prev" onclick="moveSlide(this, -1)" aria-label="Sebelumnya">&#10094;</button>
+                                <button class="carousel-btn next" onclick="moveSlide(this, 1)" aria-label="Selanjutnya">&#10095;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active" onclick="setSlide(this, 0)"></span>
+                                    <span class="dot" onclick="setSlide(this, 1)"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-tags">
+                            <span class="tag role" data-id="Pemain" data-en="Player">Pemain</span>
+                            <span class="tag game">World Cyber Games</span>
+                            <span class="tag game">Crossfire PC</span>
+                        </div>
+                    </div>
+
+                    <!-- KARTU 4: Silver Medal SEA Games 32 -->
+                    <div class="timeline-card">
+                        <div class="card-content-wrapper">
+                            
+                            <!-- HEADER KARTU (Pemisah Utama Kiri & Kanan) -->
+                            <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                                
+                                <!-- SISI KIRI: Logo + Teks "SEA Games 32" Samping-sampingan -->
+                                <div class="card-header-left" style="display: flex; align-items: center; gap: 12px;">
+                                    <img src="../images/seagames32.png" alt="SEA Games 31 Logo" class="team-logo">
+                                    <span style="font-size: 1.25rem; font-weight: 700; color: #ffffff; white-space: nowrap;" data-id="SEA Games 32" data-en="SEA Games 32">
+                                        SEA Games 32
+                                    </span>
+                                </div>
+
+                                <!-- SISI KANAN: Bendera + Tahun -->
+                                <div class="header-right" style="display: flex; align-items: center; gap: 8px;">
+                                    <img src="../images/bendera/flag.png" alt="Bendera Vietnam" class="flag-icon">
+                                    <span class="card-date">2023</span>
+                                </div>
+
+                            </div>
+
+                            <!-- SUBJUDUL PRESTASI -->
+                            <h3 class="card-title">
+                                <span data-id="Medali Perak" data-en="Silver Medal">Silver Medal</span>
+                                <img src="../images/silver-medal.png" alt="Ikon Medali Perunggu" class="medal-icon">
+                            </h3>
+
+                            <p class="card-desc" data-id="Meraih medali SILVER pada ajang SEA Games ke-32 di Kamboja pada tahun 2023." data-en="Achieved a SILVER medal at the 31st SEA Games Cambodia 2023.">
+                                Meraih medali PERUNGGU pada ajang SEA Games ke-32 di Kamboja pada tahun 2023.
+                            </p>
+                            
+                            <!-- Carousel Foto Momen -->
+                            <div class="card-carousel">
+                                <div class="carousel-track">
+                                    <img src="../images/esports/sg23_1.jpeg" alt="Momen Medali Perunggu 1" class="carousel-img active" onclick="openLightbox(this)">
+                                    <img src="../images/esports/sg23_2.jpeg" alt="Momen Medali Perunggu 2" class="carousel-img" onclick="openLightbox(this)">
+                                </div>
+                                <button class="carousel-btn prev" onclick="moveSlide(this, -1)" aria-label="Sebelumnya">&#10094;</button>
+                                <button class="carousel-btn next" onclick="moveSlide(this, 1)" aria-label="Selanjutnya">&#10095;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active" onclick="setSlide(this, 0)"></span>
+                                    <span class="dot" onclick="setSlide(this, 1)"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-tags">
+                            <span class="tag role" data-id="Pemain" data-en="Player">Pemain</span>
+                            <span class="tag game">SEA Games 32</span>
+                            <span class="tag game">Crossfire PC</span>
+                        </div>
+                    </div>
+
+                    <!-- KARTU 5: Bronze Medal SEA Games 31 -->
+                    <div class="timeline-card">
+                        <div class="card-content-wrapper">
+                            
+                            <!-- HEADER KARTU (Pemisah Utama Kiri & Kanan) -->
+                            <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                                
+                                <!-- SISI KIRI: Logo + Teks "SEA Games 31" Samping-sampingan -->
+                                <div class="card-header-left" style="display: flex; align-items: center; gap: 12px;">
+                                    <img src="../images/seagames31.png" alt="SEA Games 31 Logo" class="team-logo">
+                                    <span style="font-size: 1.25rem; font-weight: 700; color: #ffffff; white-space: nowrap;" data-id="SEA Games 31" data-en="SEA Games 31">
+                                        SEA Games 31
+                                    </span>
+                                </div>
+
+                                <!-- SISI KANAN: Bendera + Tahun -->
+                                <div class="header-right" style="display: flex; align-items: center; gap: 8px;">
+                                    <img src="../images/bendera/vietnam.png" alt="Bendera Vietnam" class="flag-icon">
+                                    <span class="card-date">2022</span>
+                                </div>
+
+                            </div>
+
+                            <!-- SUBJUDUL PRESTASI -->
+                            <h3 class="card-title">
+                                <span data-id="Medali Perunggu" data-en="Bronze Medal">Medali Perunggu</span>
+                                <img src="../images/bronze-medal.png" alt="Ikon Medali Perunggu" class="medal-icon">
+                            </h3>
+
+                            <p class="card-desc" data-id="Meraih medali PERUNGGU pada ajang SEA Games ke-31 di Vietnam pada tahun 2022." data-en="Achieved a BRONZE medal at the 31st SEA Games Vietnam 2022.">
+                                Meraih medali PERUNGGU pada ajang SEA Games ke-31 di Vietnam pada tahun 2022.
+                            </p>
+                            
+                            <!-- Carousel Foto Momen -->
+                            <div class="card-carousel">
+                                <div class="carousel-track">
+                                    <img src="../images/esports/sg21_1.jpeg" alt="Momen Medali Perunggu 1" class="carousel-img active" onclick="openLightbox(this)">
+                                    <img src="../images/esports/sg21_2.jpeg" alt="Momen Medali Perunggu 2" class="carousel-img" onclick="openLightbox(this)">
+                                </div>
+                                <button class="carousel-btn prev" onclick="moveSlide(this, -1)" aria-label="Sebelumnya">&#10094;</button>
+                                <button class="carousel-btn next" onclick="moveSlide(this, 1)" aria-label="Selanjutnya">&#10095;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active" onclick="setSlide(this, 0)"></span>
+                                    <span class="dot" onclick="setSlide(this, 1)"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-tags">
+                            <span class="tag role" data-id="Pemain" data-en="Player">Pemain</span>
+                            <span class="tag game">SEA Games 31</span>
+                            <span class="tag game">Crossfire PC</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Popup Lightbox Foto -->
+    <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-hidden="true">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <button class="lightbox-btn prev" onclick="moveLightboxSlide(-1)" aria-label="Gambar Sebelumnya">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Foto Pembesaran Momen">
+            <p id="lightboxCaption" class="lightbox-caption"></p>
+        </div>
+        <button class="lightbox-btn next" onclick="moveLightboxSlide(1)" aria-label="Gambar Selanjutnya">&#10095;</button>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+    <script src="../script.js"></script>
+</body>
+</html>
